@@ -3,12 +3,14 @@
   <xsd:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd"/>
   <xsd:element name="MainDeclaration" type="MainDeclaration"/>
   <xsd:element type="Include" name="IPC-1752B"/>
-  <xsd:complexType name="MainDeclaration">
+  <xsd:complexType name="FooBar">
     <xsd:sequence>
-      <xsd:element name="BusinessInfo" type="BusinessInfo"/>
+      <xsd:element name="FooInfo" type="FooType"/>
       <xsd:element maxOccurs="unbounded" minOccurs="1" ref="IPC-1752B:IPC-1752B"/>
-      <xsd:element minOccurs="0" name="Signature" type="ds:SignatureType"/>
+      <xsd:element minOccurs="0" name="Signature" type="ds:SignatureType"/>="
     </xsd:sequence>
+  </xsd:ComplexType
+  <xsd:complexType name="MainDeclaration">
     <xsd:attribute name="version">
       <xsd:simpleType>
         <xsd:restriction base="xsd:string">
